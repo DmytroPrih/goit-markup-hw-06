@@ -162,6 +162,10 @@
           <ul class="team-list list">
             <li class="team-card">
               <img
+                srcset="
+                  ./images/photo_mark.jpg    1x,
+                  ./images/photo_mark@2x.jpg 2x
+                "
                 src="./images/photo_mark.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -204,6 +208,7 @@
             </li>
             <li class="team-card">
               <img
+                srcset="/images/photo_tom.jpg 1x, ./images/photo_tom@2x.jpg 2x"
                 src="./images/photo_tom.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -246,6 +251,10 @@
             </li>
             <li class="team-card">
               <img
+                srcset="
+                  /images/photo_camila.jpg     1x,
+                  ./images/photo_camila@2x.jpg 2x
+                "
                 src="./images/photo_camila.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -288,6 +297,10 @@
             </li>
             <li class="team-card">
               <img
+                srcset="
+                  /images/photo_daniel.jpg     1x,
+                  ./images/photo_daniel@2x.jpg 2x
+                "
                 src="./images/photo_daniel.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -443,6 +456,8 @@
       </div>
     </footer>
 
+    <!--modal-->
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal modal-container">
         <button type="button" class="modal-button" data-modal-close>
@@ -528,6 +543,81 @@
         </form>
       </div>
     </div>
+
+    <!--mobile menu-->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <div class="close-style">
+          <svg class="menu-button-svg" width="8" height="8">
+            <use href="./images/modal.svg#icon-modal"></use>
+          </svg>
+        </div>
+      </button>
+      <ul class="mobile-menu">
+        <li>
+          <a href="./index.html" class="menu-link link current-menu">Studio</a>
+        </li>
+        <li><a href="./portfolio.html" class="menu-link link">Portfolio</a></li>
+        <li><a href="" class="menu-link link">Contacts</a></li>
+      </ul>
+
+      <div>
+        <address class="menu-address">
+          <ul class="menu-address-list list">
+            <li class="menu-list-item">
+              <a class="address-style link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="address-item">
+              <a class="menu-item-link link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <ul class="menu-icons list">
+          <li class="fourth-item">
+            <a class="menu-icon-svg link" href="#">
+              <svg class="menu-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="fourth-item">
+            <a class="menu-icon-svg link" href="#">
+              <svg class="menu-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="fourth-item">
+            <a class="menu-icon-svg link" href="#">
+              <svg class="menu-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="fourth-item">
+            <a class="menu-icon-svg link" href="#">
+              <svg class="menu-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
