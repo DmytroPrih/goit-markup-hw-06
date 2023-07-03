@@ -56,6 +56,8 @@
             </li>
           </ul>
         </address>
+
+        <!--mobile menu-->
         <button
           type="button"
           class="js-open-menu"
@@ -218,7 +220,10 @@
             <li class="about-list-item">
               <img
                 src="./images/smartphone.jpg"
-                secset="./images/smartphone.jpg    1x, ./images/smartphone@2x.jpg 2x"
+                srcset="
+                  ./images/smartphone.jpg    1x,
+                  ./images/smartphone@2x.jpg 2x
+                "
                 alt="smartphone"
                 width="360"
                 height="300"
@@ -624,71 +629,6 @@
     </div>
 
     <!--mobile menu-->
-
-    <div class="none menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-        <div class="close-style">
-          <svg class="menu-button-svg" width="8" height="8">
-            <use href="./images/modal.svg#icon-modal"></use>
-          </svg>
-        </div>
-      </button>
-      <ul class="mobile-menu">
-        <li>
-          <a href="./index.html" class="menu-link link current-menu">Studio</a>
-        </li>
-        <li><a href="./portfolio.html" class="menu-link link">Portfolio</a></li>
-        <li><a href="" class="menu-link link">Contacts</a></li>
-      </ul>
-
-      <div>
-        <address class="menu-address">
-          <ul class="menu-address-list list">
-            <li class="menu-list-item">
-              <a class="address-style link" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-            <li class="address-item">
-              <a class="menu-item-link link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-          </ul>
-        </address>
-
-        <ul class="menu-icons list">
-          <li class="fourth-item">
-            <a class="menu-icon-svg link" href="#">
-              <svg class="menu-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="fourth-item">
-            <a class="menu-icon-svg link" href="#">
-              <svg class="menu-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="fourth-item">
-            <a class="menu-icon-svg link" href="#">
-              <svg class="menu-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="fourth-item">
-            <a class="menu-icon-svg link" href="#">
-              <svg class="menu-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
 
     <script
       defer

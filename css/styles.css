@@ -1016,6 +1016,3 @@ img {
   transform: translateY(100%);
   transition: transform var(--transition);
 }
-.none {
-  display: none;
-}
